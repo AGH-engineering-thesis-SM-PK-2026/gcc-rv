@@ -1,0 +1,31 @@
+
+src/ledwalk.tmp.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00002137          	lui	sp,0x2
+   4:	008000ef          	jal	c <main>
+
+00000008 <_end>:
+   8:	0000006f          	j	8 <_end>
+
+0000000c <main>:
+   c:	ff010113          	addi	sp,sp,-16 # 1ff0 <main+0x1fe4>
+  10:	00112623          	sw	ra,12(sp)
+  14:	00812423          	sw	s0,8(sp)
+  18:	01010413          	addi	s0,sp,16
+  1c:	01000793          	li	a5,16
+  20:	01000713          	li	a4,16
+  24:	00e7a023          	sw	a4,0(a5)
+  28:	01000793          	li	a5,16
+  2c:	02000713          	li	a4,32
+  30:	00e7a023          	sw	a4,0(a5)
+  34:	01000793          	li	a5,16
+  38:	04000713          	li	a4,64
+  3c:	00e7a023          	sw	a4,0(a5)
+  40:	01000793          	li	a5,16
+  44:	08000713          	li	a4,128
+  48:	00e7a023          	sw	a4,0(a5)
+  4c:	fd1ff06f          	j	1c <main+0x10>
