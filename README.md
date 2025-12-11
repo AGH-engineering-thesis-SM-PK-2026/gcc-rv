@@ -13,7 +13,7 @@ The main toolchain script, can be used to build single-file programs written in 
 To make the script easier to use, you can define an alias in your `.bashrc`/`.profile`:
 
 ```sh
-alias rv="$HOME/gcc-rv/rv.sh"
+echo 'alias rv="$HOME/gcc-rv/rv.sh"' >> .profile
 ```
 
 To see the script usage, run:
