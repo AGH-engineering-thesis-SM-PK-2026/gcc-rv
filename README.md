@@ -10,10 +10,10 @@ The main toolchain script, can be used to build single-file programs written in 
 
 ##### Tips
 
-To make the script easier to use, you can define an alias in your `.bashrc`:
+To make the script easier to use, you can define an alias in your `.bashrc`/`.profile`:
 
 ```sh
-alias rv=/home/<user>/gcc-rv/rv.sh
+alias rv="$HOME/gcc-rv/rv.sh"
 ```
 
 To see the script usage, run:
